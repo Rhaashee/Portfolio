@@ -11,11 +11,5 @@ const experience = [
     company: "Bharat Electronics Limited (BEL)",
     period: "2025",
     desc: "45-day internship focused on cryptography concepts. Contributed to security research and documentation.",
-  },
-  {
-    role: "Open Source Contributor",
-    company: "GDG Solution Challenge",
-    period: "2025 – Present",
-    desc: "Participated in GDG Solution Challenge 2025. Contributed to open-source projects and improved documentation.",
-  },
+  }
 ];

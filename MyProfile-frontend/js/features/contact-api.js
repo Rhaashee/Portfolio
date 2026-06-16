@@ -2,7 +2,7 @@
 // Connects the contact form to the live Node/Express backend.
 // Update API_BASE_URL to your deployed backend URL when you go live.
 
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL = "http://localhost:3000";
 
 async function sendContactMessage({ name, email, message }) {
   try {

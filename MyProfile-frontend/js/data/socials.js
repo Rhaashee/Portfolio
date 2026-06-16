@@ -1,6 +1,6 @@
 // js/data/socials.js
 const socialLinks = [
-  { icon: "fab fa-github", url: "https://github.com/", label: "GitHub" },
+  { icon: "fab fa-github", url: "https://github.com/Rhaashee", label: "GitHub" },
   { icon: "fab fa-linkedin", url: "https://linkedin.com/in/rhaashee-lokesh", label: "LinkedIn" },
   { icon: "fab fa-twitter", url: "https://twitter.com/", label: "Twitter" },
   { icon: "fas fa-envelope", url: "mailto:rhaasheel@gmail.com", label: "Email" },

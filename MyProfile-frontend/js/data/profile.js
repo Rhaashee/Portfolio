@@ -25,7 +25,6 @@ const profile = {
   },
   typingStrings: [
     "Data Analyst",
-    "ML Engineer",
     "Full Stack Developer",
     "Problem Solver",
   ],
