@@ -1,0 +1,154 @@
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hero-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 40px;
+    padding-top: 80px;
+  }
+
+  .hero-btns {
+    justify-content: center;
+  }
+
+  .hero-socials {
+    justify-content: center;
+  }
+
+  .hero-name {
+    font-size: 2.4rem;
+  }
+
+  .hero-image-wrap {
+    width: 280px;
+    height: 280px;
+  }
+
+  .hero-image-ring {
+    width: 240px;
+    height: 240px;
+  }
+
+  .hero-image-ring img,
+  .hero-image-placeholder {
+    width: 212px;
+    height: 212px;
+  }
+
+  .leaf-1, .leaf-2 {
+    font-size: 3rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-info-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-track {
+    flex-direction: column;
+  }
+
+  .timeline-track::before {
+    display: none;
+  }
+
+  .exp-card {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .section {
+    padding: 80px 5% 40px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certs-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    padding-bottom: 8px;
+  }
+
+  .hero-name {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile nav link hover */
+.mobile-link:hover {
+  color: var(--accent);
+}

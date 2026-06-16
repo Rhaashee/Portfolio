@@ -1,0 +1,18 @@
+/* themes.css — light/dark toggle handled via data-theme on <html> */
+/* All values live in varibales.css; this file only has structural overrides if needed */
+
+[data-theme="light"] .hero-image-ring {
+  box-shadow: 0 0 60px rgba(107, 70, 193, 0.2);
+}
+
+[data-theme="light"] .skill-bar-fill {
+  background: linear-gradient(90deg, #6b46c1, #9b7edb);
+}
+
+[data-theme="light"] .navbar {
+  box-shadow: 0 1px 20px rgba(107, 70, 193, 0.08);
+}
+
+[data-theme="light"] footer {
+  background: #ededfa;
+}

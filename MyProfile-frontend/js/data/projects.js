@@ -1,0 +1,48 @@
+// js/data/projects.js
+const projects = [
+  {
+    title: "Virtual Herbal Garden",
+    desc: "An interactive platform for exploring herbal plants and AYUSH soap product information.",
+    tags: ["Python", "HTML", "CSS"],
+    emoji: "🌿",
+    github: "#",
+    live: "#",
+    featured: true,
+  },
+  {
+    title: "AI Feedback System",
+    desc: "Prototype to automate feedback collection for teachers using NLP techniques.",
+    tags: ["Python", "Flask", "NLP"],
+    emoji: "🤖",
+    github: "#",
+    live: "#",
+    featured: true,
+  },
+  {
+    title: "Land Leasing Platform",
+    desc: "A web-based solution for secure land leasing with buyer–seller login features.",
+    tags: ["HTML", "CSS", "JavaScript", "MySQL"],
+    emoji: "🏡",
+    github: "#",
+    live: "#",
+    featured: true,
+  },
+  {
+    title: "CLI LinkedIn Clone",
+    desc: "Command-line app simulating LinkedIn with profiles, connections, and job posting.",
+    tags: ["Python", "OOP", "File Handling"],
+    emoji: "💼",
+    github: "#",
+    live: "#",
+    featured: false,
+  },
+  {
+    title: "Event Management System",
+    desc: "System for event scheduling, participant registration, and report generation.",
+    tags: ["Java", "MySQL"],
+    emoji: "📅",
+    github: "#",
+    live: "#",
+    featured: false,
+  },
+];

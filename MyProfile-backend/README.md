@@ -1,0 +1,116 @@
+# Rhaashee L — Portfolio Backend
+
+A small Node.js/Express API that powers the contact form on the portfolio site. It validates incoming messages, rate-limits abuse, and sends an email via Nodemailer.
+
+## Folder structure
+
+```
+myProfile-backend/
+├── config/
+│   └── mailer.js          # Nodemailer transporter + email template
+├── middleware/
+│   ├── rateLimiter.js      # Limits 5 submissions per IP / 15 min
+│   └── validateContact.js  # Validates name, email, message
+├── routes/
+│   └── contact.js          # POST /api/contact
+├── server.js                # App entry point
+├── package.json
+├── .env.example              # Copy to .env and fill in your values
+└── .gitignore
+```
+
+## 1. Install dependencies
+
+```bash
+cd myProfile-backend
+npm install
+```
+
+## 2. Set up environment variables
+
+Copy the example file and fill in real values:
+
+```bash
+cp .env.example .env
+```
+
+Open `.env` and set:
+
+```
+PORT=5000
+NODE_ENV=development
+FRONTEND_URL=http://127.0.0.1:5501
+
+EMAIL_SERVICE=gmail
+EMAIL_USER=youremail@gmail.com
+EMAIL_PASS=your_16_char_app_password
+EMAIL_TO=rhaasheel@gmail.com
+```
+
+### Getting a Gmail App Password (required — your normal Gmail password will NOT work)
+
+1. Turn on 2-Step Verification on your Google account: https://myaccount.google.com/security
+2. Go to https://myaccount.google.com/apppasswords
+3. Create an app password for "Mail" — Google gives you a 16-character code
+4. Paste that code (no spaces) into `EMAIL_PASS` in your `.env`
+
+`EMAIL_USER` is the Gmail address sending the mail. `EMAIL_TO` is where you want messages delivered (can be the same address).
+
+## 3. Run the server
+
+```bash
+npm run dev      # with auto-restart (nodemon)
+# or
+npm start         # plain node
+```
+
+You should see:
+
+```
+Server running on http://localhost:5000
+```
+
+Test it's alive by visiting `http://localhost:5000/api/health` in your browser.
+
+## 4. Connect the frontend
+
+In `myProfile/js/features/contact-api.js`, the `API_BASE_URL` is already set to `http://localhost:5000` for local development. When you deploy the backend (Render, Railway, etc.), update that constant to your live backend URL.
+
+Also update `FRONTEND_URL` in `.env` to match wherever your frontend is actually served from (Live Server, deployed site, etc.) — this controls CORS.
+
+## API Reference
+
+### POST /api/contact
+
+**Body:**
+```json
+{
+  "name": "Jane Doe",
+  "email": "jane@example.com",
+  "message": "Hi, I'd like to work with you on a project."
+}
+```
+
+**Success response (200):**
+```json
+{ "success": true, "message": "Message sent successfully! I'll get back to you soon." }
+```
+
+**Validation error (400):**
+```json
+{ "success": false, "message": "Please enter a valid email address" }
+```
+
+**Rate limited (429):** triggers after 5 submissions from the same IP within 15 minutes.
+
+## Deploying for free
+
+Good free options for Node/Express APIs:
+- **Render** (render.com) — free web service tier, auto-deploys from GitHub
+- **Railway** (railway.app) — generous free trial credits
+- **Cyclic** (cyclic.sh) — free tier for small Node APIs
+
+After deploying, remember to:
+1. Set the same environment variables on the host's dashboard (don't commit `.env`)
+2. Update `FRONTEND_URL` to your live frontend's URL
+3. Update `API_BASE_URL` in the frontend's `contact-api.js` to your live backend URL
