@@ -25,7 +25,7 @@ const projects = [
     tags: ["Python", "OOP", "File Handling"],
     icons: ["devicon-python-plain colored"],
     emoji: "💼",
-    github: "https://github.com/Rhaashee/MERN_Stu_FebMay26Mys/tree/main/W12",
+    github: "",
     live: "#",
     featured: false,
   },
