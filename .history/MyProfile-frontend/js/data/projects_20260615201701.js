@@ -1,9 +1,9 @@
+// js/data/projects.js
 const projects = [
   {
     title: "Virtual Herbal Garden",
     desc: "An interactive platform for exploring herbal plants and AYUSH soap product information.",
     tags: ["Python", "HTML", "CSS"],
-    icons: ["devicon-python-plain colored", "devicon-html5-plain colored", "devicon-css3-plain colored"],
     emoji: "🌿",
     github: "#",
     live: "#",
@@ -13,7 +13,6 @@ const projects = [
     title: "AI Feedback System",
     desc: "Prototype to automate feedback collection for teachers using NLP techniques.",
     tags: ["Python", "Flask", "NLP"],
-    icons: ["devicon-python-plain colored", "devicon-flask-original colored", "devicon-tensorflow-original colored"],
     emoji: "🤖",
     github: "#",
     live: "#",
@@ -23,7 +22,6 @@ const projects = [
     title: "Land Leasing Platform",
     desc: "A web-based solution for secure land leasing with buyer–seller login features.",
     tags: ["HTML", "CSS", "JavaScript", "MySQL"],
-    icons: ["devicon-html5-plain colored", "devicon-css3-plain colored", "devicon-javascript-plain colored", "devicon-mysql-plain colored"],
     emoji: "🏡",
     github: "#",
     live: "#",
@@ -33,7 +31,6 @@ const projects = [
     title: "CLI LinkedIn Clone",
     desc: "Command-line app simulating LinkedIn with profiles, connections, and job posting.",
     tags: ["Python", "OOP", "File Handling"],
-    icons: ["devicon-python-plain colored"],
     emoji: "💼",
     github: "#",
     live: "#",
@@ -43,7 +40,6 @@ const projects = [
     title: "Event Management System",
     desc: "System for event scheduling, participant registration, and report generation.",
     tags: ["Java", "MySQL"],
-    icons: ["devicon-java-plain colored", "devicon-mysql-plain colored"],
     emoji: "📅",
     github: "#",
     live: "#",

@@ -1,5 +1,5 @@
 // js/features/contact-api.js
-const EMAILJS_SERVICE_ID  = "service_hnmqlqk";   // replace with yours
+const EMAILJS_SERVICE_ID  = "service_xyz789";   // replace with yours
 const EMAILJS_TEMPLATE_ID = "template_gttor2v";  // replace with yours
 const EMAILJS_PUBLIC_KEY  = "GqL0eiwRXG4JF6p2A";  // replace with yours
 

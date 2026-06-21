@@ -1,4 +1,4 @@
-const skills = [
+/const skills = [
   { name: "Python", icon: "devicon-python-plain colored" },
   { name: "MySQL", icon: "devicon-mysql-plain colored" },
   { name: "MongoDB", icon: "devicon-mongodb-plain colored" },

@@ -1,10 +1,10 @@
 // js/data/profile.js
 const profile = {
-  name: "RHAASHEE L",
-  shortName: "RHAASHEE L",
-  initial: "RL",
+  name: "Rhaashee L",
+  shortName: "Rhaashee",
+  initial: "R",
   hello: "Hello, I'm",
-  tagline: "Data Science Graduate |  Full Stack Developer",
+  tagline: "Data Analyst | ML Engineer | Full Stack Developer",
   description:
     "Passionate about building efficient, scalable and user-friendly applications and solving real-world problems through technology. B.E. in Computer Science & Engineering (Data Science) graduate with hands-on experience in Data Analytics, Machine Learning, NLP, and MERN Stack Development.",
   email: "rhaasheel@gmail.com",
@@ -19,7 +19,7 @@ const profile = {
   profileImage: "assets/images/rhaa.jpeg",
   socials: {
     github: "https://github.com/Rhaashee",
-    linkedin: "https://www.linkedin.com/in/rhaashee-lokesh-5ba271339/",
+    linkedin: "https://linkedin.com/in/rhaashee-lokesh",
     email: "mailto:rhaasheel@gmail.com",
   },
   typingStrings: [

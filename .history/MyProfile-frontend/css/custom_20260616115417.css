@@ -497,16 +497,8 @@ img {
   background: var(--bg-card);
   border: 1px solid var(--border-card);
   border-radius: 12px;
-  padding: 24px 16px;
+  padding: 18px;
   transition: all 0.3s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.skill-card i {
-  font-size: 3rem;
 }
 
 .skill-card:hover {
@@ -664,17 +656,6 @@ img {
 
 .projects-btn-wrap {
   text-align: center;
-}
-
-.project-tech-icons {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  justify-content: center;
-}
-
-.project-tech-icons i {
-  font-size: 2.4rem;
 }
 
 /* ===== EXPERIENCE ===== */

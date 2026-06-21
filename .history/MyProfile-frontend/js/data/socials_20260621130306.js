@@ -1,7 +1,7 @@
 // js/data/socials.js
 const socialLinks = [
   { icon: "fab fa-github", url: "https://github.com/Rhaashee", label: "GitHub" },
-  { icon: "fab fa-linkedin", url: "https://www.linkedin.com/in/rhaashee-lokesh-5ba271339/", label: "LinkedIn" },
+  { icon: "fab fa-linkedin", url: "inkedin.com/in/rhaashee-lokesh-5ba271339", label: "LinkedIn" },
   { icon: "fas fa-envelope", url: "mailto:rhaasheel@gmail.com", label: "Email" },
 ];
 

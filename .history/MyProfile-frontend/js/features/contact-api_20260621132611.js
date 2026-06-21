@@ -1,7 +1,7 @@
 // js/features/contact-api.js
-const EMAILJS_SERVICE_ID  = "service_hnmqlqk";   // replace with yours
-const EMAILJS_TEMPLATE_ID = "template_gttor2v";  // replace with yours
-const EMAILJS_PUBLIC_KEY  = "GqL0eiwRXG4JF6p2A";  // replace with yours
+const EMAILJS_SERVICE_ID  = "service_xyz789";   // replace with yours
+const EMAILJS_TEMPLATE_ID = "template_abc123";  // replace with yours
+const EMAILJS_PUBLIC_KEY  = "your_public_key";  // replace with yours
 
 document.addEventListener("DOMContentLoaded", () => {
   emailjs.init(EMAILJS_PUBLIC_KEY);

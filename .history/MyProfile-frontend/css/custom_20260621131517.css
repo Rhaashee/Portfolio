@@ -507,7 +507,7 @@ img {
 
 .skill-card i {
   font-size: 3rem;
-}
+}}
 
 .skill-card:hover {
   border-color: var(--accent);
@@ -664,17 +664,6 @@ img {
 
 .projects-btn-wrap {
   text-align: center;
-}
-
-.project-tech-icons {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  justify-content: center;
-}
-
-.project-tech-icons i {
-  font-size: 2.4rem;
 }
 
 /* ===== EXPERIENCE ===== */

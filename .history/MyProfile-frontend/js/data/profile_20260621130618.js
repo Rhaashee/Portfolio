@@ -1,7 +1,7 @@
 // js/data/profile.js
 const profile = {
-  name: "RHAASHEE L",
-  shortName: "RHAASHEE L",
+  name: "Rhaashee L",
+  shortName: "Welcome to my Portfolio",
   initial: "RL",
   hello: "Hello, I'm",
   tagline: "Data Science Graduate |  Full Stack Developer",
